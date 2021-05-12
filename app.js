@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(pacmanCurrentIndex % width < width -1 && !squares[pacmanCurrentIndex +1].classList.contains('wall') && !squares[pacmanCurrentIndex +1].classList.contains('ghost-lair')) pacmanCurrentIndex +=1
         
         //check if pacman is in the right exit
-        if(pacmanCurrentIndex +1) === 392) {
+        if((pacmanCurrentIndex +1) === 392) {
           pacmanCurrentIndex = 364
         }
         
