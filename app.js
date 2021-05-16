@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
       //else find a new direction to try
-      } else direction = directions[math.floor(Math.random() * directions.length)]
+      } else direction = directions[Math.floor(Math.random() * directions.length)]
 
     }, ghost.speed)
   }
