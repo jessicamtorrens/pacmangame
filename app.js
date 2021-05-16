@@ -95,7 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         break
       case 40:
-        if(pacmanCurrentIndex + width < width * width && !squares[pacmanCurrentIndex +width].classList.contains('wall') && squares[pacmanCurrentIndex +width].classList.contains('ghost-lair')) pacmanCurrentIndex +=width
+        if(pacmanCurrentIndex + width < width * width && !squares[pacmanCurrentIndex +width].classList.contains('wall') && !squares[pacmanCurrentIndex +width].classList.contains('ghost-lair')) 
+        pacmanCurrentIndex += width
         break
     }
     
@@ -116,6 +117,13 @@ document.addEventListener('DOMContentLoaded', () => {
       score++
       scoreDisplay.innerHTML = score
       squares[pacmanCurrentIndex].classList.remove('pac-dot')
+    }
+  }
+
+  //what happens when you eat a power pellet
+  function powerPelletEaten() {
+    if(squares[pacmanCurrentIndex].classList.contains('power-pellet')) {
+      
     }
   }
 
